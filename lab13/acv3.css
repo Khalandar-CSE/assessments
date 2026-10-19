@@ -1,0 +1,121 @@
+
+body {
+  max-width: 800px;           /* no wider than 800px... */
+  margin: 0 auto;             /* ...and centred */
+  padding: 32px 20px 48px;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+  color: #1b2a41;
+  background-color: #e9eef2;  /* not white */
+  /* faint graph-paper grid, drawn with two gradients */
+  background-image:
+    linear-gradient(rgba(27, 42, 65, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 42, 65, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+/* ---------- header ---------- */
+header {
+  padding: 24px 0 20px;
+  border-bottom: 3px solid #1b2a41;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.role {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 10px;
+  background: #f2b705;
+  color: #1b2a41;
+  font-weight: bold;
+  transform: rotate(-1.5deg);   /* like a label stuck on the page */
+}
+
+/* ---------- sections ---------- */
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-left: 12px;
+  border-left: 6px solid #f2b705;
+}
+
+.about p {
+  max-width: 60ch;
+  margin: 0;
+}
+
+/* ---------- skills as chips ---------- */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills li {
+  background: #1b2a41;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+/* ---------- project cards ---------- */
+.projects h2 {
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #fdfcf7;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid #c9d2da;
+  border-left: 6px solid #1b2a41;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin: 0;
+  color: #5c6670;
+}
+
+/* ---------- footer ---------- */
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 2px dashed #5c6670;
+  text-align: center;
+  color: #5c6670;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
